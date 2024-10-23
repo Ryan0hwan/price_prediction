@@ -1,0 +1,128 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 헤더 스타일 */
+.main-header {
+    background-color: #4CAF50; /* 녹색 배경 */
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    float: right;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* 배너 스타일 */
+.banner {
+    background-image: url('https://via.placeholder.com/1200x300');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+/* 주요 콘텐츠 스타일 */
+.content {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.card {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 30px);
+    float: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* 푸터 스타일 */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        float: none;
+    }
+
+    .main-nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    .main-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
