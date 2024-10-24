@@ -120,6 +120,28 @@ footer {
     margin: 20px 0;
 }
 
+.input-box {
+    margin-top: 20px;
+    width: 561px;      /*가로세로*/
+    height: 44px;
+    border-radius: 24px;  /*모서리 둥글게 만드는거*/
+    border: 1px solid #dfe1e5;
+ 
+    padding-left: 40px;     /*상자안쪽에 공간을 약간 줘서, 검색창에 글씨쓸때, 살짝 공간주고 시작*/
+    padding-right: 40px;
+ }
+
+ .keyboard-icon {
+    position: relative;
+    right: 70px;
+    color: #9aa0a6;
+ }
+ .mic-icon {
+    position: relative;
+    right: 60px;
+    color: #9aa0a6;
+ }
+
 .icon-box {
     width: 54px;
     height: 54px;
